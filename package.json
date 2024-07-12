@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-web-api",
+  "name": "whats-api-dist",
   "version": "1.0.0",
   "description": "Fix API for whatsappweb.js",
   "dependencies": {
