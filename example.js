@@ -13,10 +13,12 @@ client.on('qr', qr => {
 
 client.on('message', async message => {
     let hello_msg = "Mensagem padrão";
-    let msg = message.body.toLowerCase(); // Converter a mensagem para minúsculas
+    let msg = message.body.toLowerCase().trim(); 
 
-    console.log("Mensagem recebida: " + msg);
+    console.log("Mensagem recebida: " + msg); 
 
+
+    // Captura tudo que estiver após "teste" e executa uma ação
     if (msg.includes("teste")) {
         if (msg.startsWith('teste ')) {
             const parametro = msg.slice(6).trim(); // Obtém o valor após "teste "
